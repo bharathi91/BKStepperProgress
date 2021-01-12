@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="BKPagingSlider" customModuleProvider="target">
+            <connections>
+                <outlet property="steperView" destination="BeW-JU-4YI" id="bso-jO-N88"/>
+                <outlet property="steperView2" destination="rQh-jD-gDb" id="2Ju-ZP-n98"/>
+                <outlet property="steperView3" destination="XVU-BF-Enh" id="FaK-r6-Aru"/>
+                <outlet property="steperView4" destination="hmL-5H-yvA" id="dbt-Ix-5FS"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BeW-JU-4YI" customClass="BKPagingSlider" customModule="BKPagingSlider" customModuleProvider="target">
+                    <rect key="frame" x="20" y="84" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="u4S-0z-BwH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowTitle" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfThumbs">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbSize">
+                            <integer key="value" value="50"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledBarColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBarColor">
+                            <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledThumbColor">
+                            <color key="value" red="0.21176470589999999" green="0.41960784309999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledThumbColor">
+                            <color key="value" red="0.75210169469999999" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="selectedStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="disabledImage" value="disableStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="completedImage" value="completedStepper"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rQh-jD-gDb" customClass="BKPagingSlider" customModule="BKPagingSlider" customModuleProvider="target">
+                    <rect key="frame" x="20" y="228" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="6l3-FQ-Wqn"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowTitle" value="YES"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfThumbs">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbSize">
+                            <integer key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledBarColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBarColor">
+                            <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledThumbColor">
+                            <color key="value" red="0.21176470589999999" green="0.41960784309999999" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledThumbColor">
+                            <color key="value" red="0.75210169469999999" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="selectedStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="disabledImage" value="disableStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="completedImage" value="completedStepper"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowImage" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVU-BF-Enh" customClass="BKPagingSlider" customModule="BKPagingSlider" customModuleProvider="target">
+                    <rect key="frame" x="20" y="361" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="nqf-dI-CBZ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowTitle" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfThumbs">
+                            <integer key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbSize">
+                            <integer key="value" value="60"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                            <real key="value" value="12.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledBarColor">
+                            <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBarColor">
+                            <color key="value" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledThumbColor">
+                            <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledThumbColor">
+                            <color key="value" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="selectedStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="disabledImage" value="disableStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="completedImage" value="completedStepper"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowImage" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-5H-yvA" customClass="BKPagingSlider" customModule="BKPagingSlider" customModuleProvider="target">
+                    <rect key="frame" x="20" y="482" width="374" height="80"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="80" id="2db-12-m5o"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowTitle" value="NO"/>
+                        <userDefinedRuntimeAttribute type="number" keyPath="numberOfThumbs">
+                            <integer key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbSize">
+                            <integer key="value" value="45"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="thumbRadius">
+                            <real key="value" value="22.5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledBarColor">
+                            <color key="value" red="0.1800068021" green="0.63295620679999998" blue="0.59650540350000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledBarColor">
+                            <color key="value" red="0.39405490360000001" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="unFilledThumbColor">
+                            <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="filledThumbColor">
+                            <color key="value" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="selectedImage" value="selectedStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="disabledImage" value="disableStepper"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="completedImage" value="completedStepper"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldShowImage" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="hmL-5H-yvA" firstAttribute="leading" secondItem="XVU-BF-Enh" secondAttribute="leading" id="013-N2-Ipd"/>
+                <constraint firstItem="rQh-jD-gDb" firstAttribute="trailing" secondItem="BeW-JU-4YI" secondAttribute="trailing" id="0kr-oD-ofA"/>
+                <constraint firstItem="rQh-jD-gDb" firstAttribute="top" secondItem="BeW-JU-4YI" secondAttribute="bottom" constant="64" id="20j-v5-TGn"/>
+                <constraint firstItem="BeW-JU-4YI" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="4xs-wm-EYp"/>
+                <constraint firstItem="hmL-5H-yvA" firstAttribute="top" secondItem="XVU-BF-Enh" secondAttribute="bottom" constant="41" id="5Kv-cS-Ztt"/>
+                <constraint firstItem="XVU-BF-Enh" firstAttribute="trailing" secondItem="rQh-jD-gDb" secondAttribute="trailing" id="6ol-1G-ug1"/>
+                <constraint firstItem="BeW-JU-4YI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="DeG-gU-y4Y"/>
+                <constraint firstItem="XVU-BF-Enh" firstAttribute="leading" secondItem="rQh-jD-gDb" secondAttribute="leading" id="SLy-ee-fUV"/>
+                <constraint firstItem="hmL-5H-yvA" firstAttribute="trailing" secondItem="XVU-BF-Enh" secondAttribute="trailing" id="dQd-77-EjN"/>
+                <constraint firstItem="XVU-BF-Enh" firstAttribute="top" secondItem="rQh-jD-gDb" secondAttribute="bottom" constant="53" id="gyH-dk-ofB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BeW-JU-4YI" secondAttribute="trailing" constant="20" id="iDp-Uu-5Sa"/>
+                <constraint firstItem="rQh-jD-gDb" firstAttribute="leading" secondItem="BeW-JU-4YI" secondAttribute="leading" id="ntg-kh-Hfb"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="139" y="151"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="completedStepper" width="23" height="23"/>
+        <image name="disableStepper" width="24" height="24"/>
+        <image name="selectedStepper" width="256" height="256"/>
+    </resources>
+</document>
